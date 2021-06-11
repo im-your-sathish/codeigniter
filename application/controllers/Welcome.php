@@ -70,5 +70,33 @@ class Welcome extends CI_Controller {
             echo json_encode($this->input->request());
         }
         */
+	
+	// Google signin
+
+		// include_once APPPATH . "libraries/vendor/autoload.php";
+        // $google_client = new Google_Client();
+        // $google_client->setClientId('828683277676-oumsgkahpkgid99t35mjdp2ibiq5u7vq.apps.googleusercontent.com');
+        // $google_client->setClientSecret('hkst9ZG8aaYQ6nofvTqYdXkd');
+        // $google_client->setRedirectUri('http://localhost/google/');
+        // $google_client->addScope('email');
+        // $google_client->addScope('profile');
+        // $data['url'] =  $google_client->createAuthUrl();
+        // if (isset($_GET["code"])) {
+        //     $token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
+        //     if (!isset($token["error"])) {
+        //         $google_client->setAccessToken($token['access_token']);
+        //         $this->session->set_userdata('access_token', $token['access_token']);
+        //         $google_service = new Google_Service_Oauth2($google_client);
+        //         $data = $google_service->userinfo->get();
+        //         $query = $this->db->where("login_oauth_uid", $data['id'])->get("users")->row();
+        //         if ($query == "") {
+        //             $reg = $this->db->insert("users", ['login_oauth_uid' => $data['id'], 'first_name' => $data['name'], 'email_address' => $data['email'], 'profile_picture' => $data['picture']]);
+        //         }
+        //         $this->session->set_userdata('user_data', $user_data);
+        //         redirect("UserController/fetchUsers");
+        //     }
+        // } else {
+        //     $this->load->view("Register", $data);
+        // }
     
 }
