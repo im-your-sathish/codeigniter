@@ -6,7 +6,10 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		// Codeigniter Crud and Image Upload
+	
+	}
+
+	//##################################### Codeigniter Crud and Image Upload ##############################################
         // insert
         // $this->db->insert("users",["name"=>"sathish","email"=>"sathish@gmail.com","password"=>"123"]);
 
@@ -43,10 +46,8 @@ class Welcome extends CI_Controller {
         // }
 
 		//$this->load->view('welcome_message');
-	}
-
    
-        /*-----------------------------API---------------
+        /*##########################################################  API   ###################################################
         public function getUsers($id=null){
             if($id)
                 $users = $this->db->where("id",$id)->get("users")->row();
@@ -71,9 +72,10 @@ class Welcome extends CI_Controller {
         }
         */
 	
-	// Google signin
-
-		// include_once APPPATH . "libraries/vendor/autoload.php";
+	
+	//####################################### // Google signin -  composer require google/apiclient:"^2.0"########################################
+	
+	// include_once APPPATH . "libraries/vendor/autoload.php";
         // $google_client = new Google_Client();
         // $google_client->setClientId('828683277676-oumsgkahpkgid99t35mjdp2ibiq5u7vq.apps.googleusercontent.com');
         // $google_client->setClientSecret('hkst9ZG8aaYQ6nofvTqYdXkd');
